@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>黑料网 - 每日更新网红明星黑料吃瓜爆料</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding:0
+    }
+
+    #__nuxt, body, html {
+        color: #fff;
+        height: 100%;
+        overflow: hidden;
+        width:100%
+    }
+
+    .pull-right {
+        float:right
+    }
+
+    .pull-left {
+        float:left
+    }
+
+    @font-face {
+        font-family: iconfont;
+        src: url(/iconfont.DSjzY8mz.woff2?t=1697945929088) format("woff2")
+    }
+
+    .iconfont {
+        font-family: iconfont !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing:grayscale
+    }
+
+    .icon-watt-shangchuantupian:before {
+        content: ""
+    }
+
+    .icon-watt-shanglazhankai:before {
+        content: ""
+    }
+
+    .icon-watt-shipin:before {
+        content: ""
+    }
+
+    .icon-watt-yiwen:before {
+        content: ""
+    }
+
+    .icon-watt-xuetangshipin:before {
+        content: ""
+    }
+
+    .icon-watt-kanhangqing:before {
+        content: ""
+    }
+
+    .icon-watt-youceshouqi:before {
+        content: ""
+    }
+
+    .icon-watt-shezhi:before {
+        content: ""
+    }
+
+    .icon-watt-outline-close:before {
+        content: "c"
+    }
+
+    .icon-watt-pchangqing-die:before {
+        content: ""
+    }
+
+    .icon-watt-pchangqing-pingwen:before {
+        content: ""
+    }
+
+    .icon-watt-pchangqing-zhang:before {
+        content: ""
+    }
+
+    .icon-watt-chazhaokehu:before {
+        content: ""
+    }
+
+    .icon-watt-image-line:before {
+        content: ""
+    }
+
+    .icon-watt-chat-line:before {
+        content: ""
+    }
+
+    .icon-watt-pc-fanhuidingbu:before {
+        content: ""
+    }
+
+    .icon-watt-Purse-line:before {
+        content: ""
+    }
+
+    .icon-watt-gengduo:before {
+        content: ""
+    }
+
+    .icon-watt-tongzhi:before {
+        content: ""
+    }
+
+    .icon-watt-a-home-line2x:before {
+        content: ""
+    }
+
+    .icon-watt-a-thumb-up-line2x:before {
+        content: ""
+    }
+
+    .icon-watt-a-search-line2x:before {
+        content: ""
+    }
+
+    .icon-watt-search-line:before {
+        content: ""
+    }
+
+    .icon-watt-notification-line1:before {
+        content: ""
+    }
+
+    .icon-watt-shopping-cart-line:before {
+        content: ""
+    }
+
+    .icon-watt-down-line1:before {
+        content: ""
+    }
+
+    .icon-watt-arrow-left:before {
+        content: ""
+    }
+
+    .icon-watt-arrow-down:before {
+        content: ""
+    }
+
+    .icon-watt-arrow-rigt:before {
+        content: ""
+    }
+
+    .icon-watt-arrow-up-line1:before {
+        content: ""
+    }
+
+    .icon-watt-close-line:before {
+        content: ""
+    }
+
+    .icon-watt-a-phone-line-22x:before {
+        content: ""
+    }
+
+    .icon-watt-a-share-line2x:before {
+        content: ""
+    }
+
+    .icon-watt-attachment:before {
+        content: ""
+    }
+
+    .icon-watt-loading:before {
+        content: ""
+    }
+
+    .icon-watt-check-circle:before {
+        content: ""
+    }
+
+    .icon-watt-warning-circle:before {
+        content: ""
+    }
+
+    .icon-watt-message:before {
+        content: ""
+    }
+
+    .icon-watt-check-square:before {
+        content: ""
+    }
+
+    .icon-watt-border:before {
+        content: ""
+    }
+
+    .icon-watt-info-circle-fill:before {
+        content: ""
+    }
+
+    .icon-watt-check-square-fill:before {
+        content: ""
+    }
+
+    .icon-watt-reload:before {
+        content: ""
+    }
+
+    .icon-watt-user:before {
+        content: ""
+    }
+
+    .icon-watt-team:before {
+        content: ""
+    }
+
+    .icon-watt-delete:before {
+        content: ""
+    }
+
+    .icon-watt-filter:before {
+        content: ""
+    }
+
+    .icon-watt-scan:before {
+        content: ""
+    }
+
+    .icon-watt-camera:before {
+        content: ""
+    }
+
+    .icon-watt-cloud-upload:before {
+        content: ""
+    }
+
+    .icon-watt-cloud-download:before {
+        content: ""
+    }
+
+    .icon-watt-image:before {
+        content: ""
+    }
+
+    .icon-watt-right:before {
+        content: ""
+    }
+
+    .icon-watt-left:before {
+        content: ""
+    }
+
+    .icon-watt-up:before {
+        content: ""
+    }
+
+    .icon-watt-down:before {
+        content: ""
+    }
+
+    .icon-watt-upload:before {
+        content: ""
+    }
+
+    .icon-watt-indent:before {
+        content: ""
+    }
+
+    .icon-watt-outdent:before {
+        content: ""
+    }
+
+    .icon-watt-menu:before {
+        content: ""
+    }
+
+    .icon-watt-unorderedlist:before {
+        content: ""
+    }
+
+    .icon-watt-close:before {
+        content: ""
+    }
+
+    .icon-watt-desktop:before {
+        content: ""
+    }
+
+    .icon-watt-minus-circle-fill:before {
+        content: ""
+    }
+
+    .icon-watt-close-circle-fill:before {
+        content: ""
+    }
+
+    .icon-watt-plus:before {
+        content: ""
+    }
+
+    .icon-watt-eyeclose-fill:before {
+        content: ""
+    }
+
+    .icon-watt-eye-close:before {
+        content: ""
+    }
+    </style>
+    <style>
+    *, :after, :before {
+        border: 0 solid #e5e7eb;
+        box-sizing:border-box
+    }
+
+    :after, :before {
+        --tw-content: ""
+    }
+
+    html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size:4
+    }
+
+    body {
+        line-height: inherit;
+        margin:0
+    }
+
+    hr {
+        border-top-width: 1px;
+        color: inherit;
+        height:0
+    }
+
+    abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration:underline dotted
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: inherit;
+        font-weight:inherit
+    }
+
+    a {
+        color: inherit;
+        text-decoration:inherit
+    }
+
+    b, strong {
+        font-weight:bolder
+    }
+
+    code, kbd, pre, samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+        font-feature-settings: normal;
+        font-size: 1em;
+        font-variation-settings:normal
+    }
+
+    small {
+        font-size:80%
+    }
+
+    sub, sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align:baseline
+    }
+
+    sub {
+        bottom:-.25em
+    }
+
+    sup {
+        top:-.5em
+    }
+
+    table {
+        border-collapse: collapse;
+        border-color: inherit;
+        text-indent:0
+    }
+
+    button, input, optgroup, select, textarea {
+        color: inherit;
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-size: 100%;
+        font-variation-settings: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        margin: 0;
+        padding:0
+    }
+
+    button, select {
+        text-transform:none
+    }
+
+    [type=button], [type=reset], [type=submit], button {
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image:none
+    }
+
+    :-moz-focusring {
+        outline:auto
+    }
+
+    :-moz-ui-invalid {
+        box-shadow:none
+    }
+
+    progress {
+        vertical-align:baseline
+    }
+
+    ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+        height:auto
+    }
+
+    [type=search] {
+        -webkit-appearance: textfield;
+        outline-offset:-2px
+    }
+
+    ::-webkit-search-decoration {
+        -webkit-appearance:none
+    }
+
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font:inherit
+    }
+
+    summary {
+        display:list-item
+    }
+
+    blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, hr, p, pre {
+        margin:0
+    }
+
+    fieldset {
+        margin:0
+    }
+
+    fieldset, legend {
+        padding:0
+    }
+
+    menu, ol, ul {
+        list-style: none;
+        margin: 0;
+        padding:0
+    }
+
+    dialog {
+        padding:0
+    }
+
+    textarea {
+        resize:vertical
+    }
+
+    input::-moz-placeholder, textarea::-moz-placeholder {
+        color: #9ca3af;
+        opacity:1
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #9ca3af;
+        opacity:1
+    }
+
+    [role=button], button {
+        cursor:pointer
+    }
+
+    :disabled {
+        cursor:default
+    }
+
+    audio, canvas, embed, iframe, img, object, svg, video {
+        display: block;
+        vertical-align:middle
+    }
+
+    img, video {
+        height: auto;
+        max-width:100%
+    }
+
+    [hidden] {
+        display:none
+    }
+
+    *, :after, :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x:;
+        --tw-pan-y:;
+        --tw-pinch-zoom:;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position:;
+        --tw-gradient-via-position:;
+        --tw-gradient-to-position:;
+        --tw-ordinal:;
+        --tw-slashed-zero:;
+        --tw-numeric-figure:;
+        --tw-numeric-spacing:;
+        --tw-numeric-fraction:;
+        --tw-ring-inset:;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, .5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur:;
+        --tw-brightness:;
+        --tw-contrast:;
+        --tw-grayscale:;
+        --tw-hue-rotate:;
+        --tw-invert:;
+        --tw-saturate:;
+        --tw-sepia:;
+        --tw-drop-shadow:;
+        --tw-backdrop-blur:;
+        --tw-backdrop-brightness:;
+        --tw-backdrop-contrast:;
+        --tw-backdrop-grayscale:;
+        --tw-backdrop-hue-rotate:;
+        --tw-backdrop-invert:;
+        --tw-backdrop-opacity:;
+        --tw-backdrop-saturate:;
+        --tw-backdrop-sepia:
+    }
+
+    ::backdrop {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x:;
+        --tw-pan-y:;
+        --tw-pinch-zoom:;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position:;
+        --tw-gradient-via-position:;
+        --tw-gradient-to-position:;
+        --tw-ordinal:;
+        --tw-slashed-zero:;
+        --tw-numeric-figure:;
+        --tw-numeric-spacing:;
+        --tw-numeric-fraction:;
+        --tw-ring-inset:;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgba(59, 130, 246, .5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur:;
+        --tw-brightness:;
+        --tw-contrast:;
+        --tw-grayscale:;
+        --tw-hue-rotate:;
+        --tw-invert:;
+        --tw-saturate:;
+        --tw-sepia:;
+        --tw-drop-shadow:;
+        --tw-backdrop-blur:;
+        --tw-backdrop-brightness:;
+        --tw-backdrop-contrast:;
+        --tw-backdrop-grayscale:;
+        --tw-backdrop-hue-rotate:;
+        --tw-backdrop-invert:;
+        --tw-backdrop-opacity:;
+        --tw-backdrop-saturate:;
+        --tw-backdrop-sepia:
+    }
+
+    .container {
+        width:100%
+    }
+
+    @media (min-width: 640px) {
+        .container {
+            max-width:640px
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width:768px
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            max-width:1024px
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .container {
+            max-width:1280px
+        }
+    }
+
+    @media (min-width: 1536px) {
+        .container {
+            max-width:1536px
+        }
+    }
+
+    .m-auto {
+        margin:auto
+    }
+
+    .mx-auto {
+        margin-left: auto;
+        margin-right:auto
+    }
+
+    .my-2 {
+        margin-bottom: .5rem;
+        margin-top:.5rem
+    }
+
+    .my-4 {
+        margin-bottom: 1rem;
+        margin-top:1rem
+    }
+
+    .my-6 {
+        margin-bottom: 1.5rem;
+        margin-top:1.5rem
+    }
+
+    .mb-10 {
+        margin-bottom:2.5rem
+    }
+
+    .mb-4 {
+        margin-bottom:1rem
+    }
+
+    .mb-6 {
+        margin-bottom:1.5rem
+    }
+
+    .mt-1 {
+        margin-top:.25rem
+    }
+
+    .mt-2 {
+        margin-top:.5rem
+    }
+
+    .mt-8 {
+        margin-top:2rem
+    }
+
+    .inline {
+        display:inline
+    }
+
+    .flex {
+        display:flex
+    }
+
+    .grid {
+        display:grid
+    }
+
+    .h-10 {
+        height:2.5rem
+    }
+
+    .h-full {
+        height:100%
+    }
+
+    .w-1\/2 {
+        width:50%
+    }
+
+    .w-1\/5 {
+        width:20%
+    }
+
+    .w-4\/5 {
+        width:80%
+    }
+
+    .w-full {
+        width:100%
+    }
+
+    .max-w-lg {
+        max-width:32rem
+    }
+
+    .cursor-pointer {
+        cursor:pointer
+    }
+
+    .grid-cols-1 {
+        grid-template-columns:repeat(1, minmax(0, 1fr))
+    }
+
+    .flex-row {
+        flex-direction:row
+    }
+
+    .items-center {
+        align-items:center
+    }
+
+    .justify-center {
+        justify-content:center
+    }
+
+    .justify-around {
+        justify-content:space-around
+    }
+
+    .gap-4 {
+        gap:1rem
+    }
+
+    .overflow-auto {
+        overflow:auto
+    }
+
+    .rounded-lg {
+        border-radius:.5rem
+    }
+
+    .bg-sub-color {
+        --tw-bg-opacity: 1;
+        background-color: #3c3b3b;
+        background-color:rgb(60 59 59/var(--tw-bg-opacity))
+    }
+
+    .bg-theme-color {
+        --tw-bg-opacity: 1;
+        background-color: #2c2a2a;
+        background-color:rgb(44 42 42/var(--tw-bg-opacity))
+    }
+
+    .p-2 {
+        padding:.5rem
+    }
+
+    .p-4 {
+        padding:1rem
+    }
+
+    .p-8 {
+        padding:2rem
+    }
+
+    .px-4 {
+        padding-left: 1rem;
+        padding-right:1rem
+    }
+
+    .py-10 {
+        padding-bottom: 2.5rem;
+        padding-top:2.5rem
+    }
+
+    .py-2 {
+        padding-bottom: .5rem;
+        padding-top:.5rem
+    }
+
+    .py-4 {
+        padding-bottom: 1rem;
+        padding-top:1rem
+    }
+
+    .text-center {
+        text-align:center
+    }
+
+    .font-mirages {
+        font-family:Mirages Custom, Merriweather, Open Sans, PingFang SC, Hiragino Sans GB, Microsoft Yahei, WenQuanYi Micro Hei, Segoe UI Emoji, Segoe UI Symbol, Helvetica, Arial, sans-serif
+    }
+
+    .text-3xl {
+        font-size: 1.875rem;
+        line-height:2.25rem
+    }
+
+    .text-4xl {
+        font-size: 2.25rem;
+        line-height:2.5rem
+    }
+
+    .text-sm {
+        font-size: .875rem;
+        line-height:1.25rem
+    }
+
+    .text-xl {
+        font-size: 1.25rem;
+        line-height:1.75rem
+    }
+
+    .font-bold {
+        font-weight:700
+    }
+
+    .text-gray-400 {
+        --tw-text-opacity: 1;
+        color: #9ca3af;
+        color:rgb(156 163 175/var(--tw-text-opacity))
+    }
+
+    .text-match-color {
+        color:var(--match-color)
+    }
+
+    .text-text-color {
+        --tw-text-opacity: 1;
+        color: #fff;
+        color:rgb(255 255 255/var(--tw-text-opacity))
+    }
+
+    @media (min-width: 768px) {
+        .md\:w-\[400px\] {
+            width:400px
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .lg\:my-8 {
+            margin-bottom: 2rem;
+            margin-top:2rem
+        }
+
+        .lg\:py-4 {
+            padding-bottom: 1rem;
+            padding-top: 1rem
+        }
+    }
+    </style>
+    <link rel="modulepreload" as="script" crossorigin href="/CqTLGAxj.js">
+    <link rel="modulepreload" as="script" crossorigin href="/DvOPqBJj.js">
+    <script type="module" src="/CqTLGAxj.js" crossorigin></script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="黑料网专注揭露网红黑料、明星丑闻等劲爆黑料曝光事件，聚合原创视频、反差社区、影视短剧、深夜综艺等优质爆料内容。每日更新吃瓜热点，快速掌握全网黑料爆点，是吃瓜群众首选的爆料聚集地。">
+    <meta name="keywords" content="黑料网, 黑料社区, 黑料不打烊, 网红黑料, 明星塌房, 吃瓜爆料, 黑料吃瓜, 吃瓜网, 每日吃瓜热榜, 爆料合集">
+    <link rel="icon" type="image/png" href="/hlw-favicon.ico">
+</head>
+<body style="--match-color:#ff9000">
+    <div id="__nuxt">
+        <div class="w-full h-full flex justify-center text-center font-mirages bg-theme-color text-text-color">
+            <div class="w-full h-full overflow-auto md:w-[400px] lg:py-4">
+                <div class="w-4/5 m-auto my-6 text-center">
+                    <h1 class="text-4xl font-bold text-match-color">黑料网</h1>
+                    <h2 class="mt-2 text-xl">每日更新网红明星黑料吃瓜爆料</h2>
+                </div>
+                <div class="p-4">
+                    <div class="grid gap-4 grid-cols-1">
+                        <div class="rounded-lg py-2 cursor-pointer bg-sub-color">
+                            <div>黑料网 - 线路一</div>
+                            <div class="mt-1 text-sm text-match-color">http://chigua.astar.org.cn/</div>
+                        </div>
+                        <div class="rounded-lg py-2 cursor-pointer bg-sub-color">
+                            <div>黑料网 - 线路二</div>
+                            <div class="mt-1 text-sm text-match-color">http://heiliao.astar.org.cn/</div>
+                        </div>
+                        <div class="rounded-lg py-4 cursor-pointer bg-sub-color"> 下载黑料APP</div>
+                        <div class="rounded-lg py-4 cursor-pointer bg-sub-color"> 吃瓜福利导航</div>
+                    </div>
+                    <div class="text-sm my-4">
+                        <div>发送任意消息到邮箱，自动获取最新</div>
+                        <div>
+                            【免翻墙】地址：
+                            <span class="text-match-color">chiguawuai@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-center justify-around text-sm">
+                        <div class="w-1/5 cursor-pointer">
+                            <img class="w-1/2 m-auto" src="/images/book.png">
+                            <div class="mt-2">回家的路</div>
+                        </div>
+                        <!---->
+                        <!---->
+                        <div class="w-1/5 cursor-pointer">
+                            <img class="w-1/2 m-auto" src="/images/telegram.png">
+                            <div class="mt-2">商务TG</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-sm p-2">
+                    <div>本站只为海外华人提供服务，非法律允许地区以及18岁以下用户禁止访问！</div>
+                    <div class="my-2">© 2025 黑料网 - 每日更新网红明星黑料吃瓜爆料</div>
+                    <div>https://5icgw.com Inc. All Rights Reserved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="teleports"></div>
+    <script>
+    window.__NUXT__ = {};
+    window.__NUXT__.config = {
+        public: {},
+        app: {
+            baseURL: "/",
+            buildId: "1afaa9c2-7e55-4de8-b3f8-920bc7aaa0e6",
+            buildAssetsDir: "/",
+            cdnURL: "",
+            BASE_URL: "/member",
+            M_ACCT: "sf982",
+            APP_NAME: "吾爱吃瓜网"
+        }
+    }
+    </script>
+    <script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__">
+    [["ShallowReactive", 1], {
+        "data": 2,
+        "state": 22,
+        "once": 24,
+        "_errors": 25,
+        "serverRendered": 28,
+        "path": 29,
+        "pinia": 30
+    }, ["ShallowReactive", 3], {
+        "$fAtbdU-n6yHihVi1AvbGoje5JGQv5pPLS3UfGsxQSRMQ": 4
+    }, {
+        "siteInfo": 5,
+        "configData": 14
+    }, {
+        "sitename": 6,
+        "title": 7,
+        "keywords": 8,
+        "description": 9,
+        "slogan": 10,
+        "favicon": 11,
+        "themeColor": 12,
+        "host": 13
+    }, "黑料网", "黑料网 - 每日更新网红明星黑料吃瓜爆料", "黑料网, 黑料社区, 黑料不打烊, 网红黑料, 明星塌房, 吃瓜爆料, 黑料吃瓜, 吃瓜网, 每日吃瓜热榜, 爆料合集", "黑料网专注揭露网红黑料、明星丑闻等劲爆黑料曝光事件，聚合原创视频、反差社区、影视短剧、深夜综艺等优质爆料内容。每日更新吃瓜热点，快速掌握全网黑料爆点，是吃瓜群众首选的爆料聚集地。", "每日更新网红明星黑料吃瓜爆料", "/hlw-favicon.ico", "#ff9000", "hlwzq.com,hlwzq.net", {
+        "web_download_app": 15,
+        "welfare_nav": 16,
+        "official_website": 17,
+        "release_line2": 18,
+        "telegram": 19,
+        "release_line1": 20,
+        "email": 21
+    }, "https://astar.org.cn/chigua66.html", "https://www.emb-costarica.cn/", "https://emb-costarica.cn", "https://astar.org.cn/cg.html", "https://t.me/sdssdd3322alal", "https://www.astar.org.cn/hl.html", "chigua84992993112@gmail.com", ["Reactive", 23], {}, ["Set"], ["ShallowReactive", 26], {
+        "$fAtbdU-n6yHihVi1AvbGoje5JGQv5pPLS3UfGsxQSRMQ": 27
+    }, null, true, "/", ["Reactive", 31], {
+        "app": 32
+    }, {
+        "siteInfo": 5,
+        "configData": 14
+    }]
+    </script>
+</body>
+</html>
+                   <hr>发布日期：<font size="2"><script language="JavaScript" type="text/JavaScript">
+var day="";
+var month="";
+var ampm="";
+var ampmhour="";
+var myweekday="";
+var year="";
+mydate=new Date();
+myweekday=mydate.getDay();
+mymonth=mydate.getMonth()+1;
+myday= mydate.getDate();
+myyear= mydate.getYear();
+year=(myyear > 200) ? myyear : 1900 + myyear;
+document.write(year+"-"+mymonth+"-"+myday+"");
+</script></font>
+        
+ 
